@@ -94,11 +94,13 @@ function dividir()
 
 	//conversion
 
-	unNumero = parseFloat(unNumero);
+	unNumero = parseInt(unNumero);
 
-	otroNumero = parseFloat(otroNumero);
+	otroNumero = parseInt(otroNumero);
 
 	dividir = unNumero / otroNumero
+
+	dividir = dividir.toFixed(2);
 
 	alert(" La division es: " + dividir);
 }
